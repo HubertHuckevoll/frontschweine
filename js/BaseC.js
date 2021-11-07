@@ -7,8 +7,7 @@
 class BaseC
 {
   constructor()
-  {
-  }
+  {}
 }
 
 Object.assign(BaseC.prototype, Events);
