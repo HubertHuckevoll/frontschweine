@@ -64,7 +64,7 @@ class FormoSlider extends HTMLElement
     let val = parseInt(ev.target.value);
     val = this.boundsCheck(val);
     this.value = val;
-    this.emit(val);
+    this.emit('formoSliderChange', {'value': val});
 
     ev.preventDefault();
     ev.stopPropagation();
@@ -76,7 +76,7 @@ class FormoSlider extends HTMLElement
     let val = this.value - this.step;
     val = this.boundsCheck(val);
     this.value = val;
-    this.emit(val);
+    this.emit('formoSliderChange', {'value': val});
 
     ev.preventDefault();
     return false;
