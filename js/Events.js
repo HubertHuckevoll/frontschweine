@@ -36,7 +36,7 @@ let Events =
 
     if ((window.frontschweine.eventTypeIsHandled[eventTypeStr] !== true))
     {
-      window.addEventListener(eventTypeStr, this.doHandle.bind(this), true);
+      window.addEventListener(eventTypeStr, this.doHandle.bind(this), false);
       window.frontschweine.eventTypeIsHandled[eventTypeStr] = true;
     }
 
@@ -57,6 +57,7 @@ let Events =
         if (window.frontschweine.actions[z].queryStr !== null)
         {
           let nodes = document.querySelectorAll(window.frontschweine.actions[z].queryStr);
+
           nodes.forEach((node) =>
           {
             if (node === ev.target)
@@ -78,14 +79,23 @@ let Events =
     // set up event
     let evDetails =
     {
-      detail: payload,
+      detail: {
+        payload: payload,
+        eventOrigin: null
+      },
       bubbles: true,
       cancelable: true
     }
 
+    // setup event origin
+    // if this is a custom element it has dispatchEvent and should be source
+    // if this is a different, non visual, object we use the window object as source
+    let evOriginObj = (this.dispatchEvent) ? this : window;
+    evDetails.detail.eventOrigin = evOriginObj;
+
     // dispatch Event
     let ev = new CustomEvent(eventType, evDetails);
-    window.dispatchEvent(ev);
+    evOriginObj.dispatchEvent(ev);
   }
 
 }

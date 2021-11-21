@@ -8,14 +8,16 @@ class BaseV
 
   forEachElement(nodeList, callback)
   {
-    for (var i = 0; i < nodeList.length; i++) {
+    for (var i = 0; i < nodeList.length; i++)
+    {
       callback(nodeList[i]);
     }
   }
 
   iterate(objArr, callback)
   {
-    for (var i = 0; i < objArr.length; i++) {
+    for (var i = 0; i < objArr.length; i++)
+    {
       callback(i, objArr[i]);
     }
   }
@@ -23,7 +25,8 @@ class BaseV
   hide(selector)
   {
     var nodes = document.querySelectorAll(selector);
-    this.forEachElement(nodes, (node) => {
+    this.forEachElement(nodes, (node) =>
+    {
       node.style.display = 'none';
     });
   }
@@ -31,7 +34,8 @@ class BaseV
   show(selector)
   {
     var nodes = document.querySelectorAll(selector);
-    this.forEachElement(nodes, (node) => {
+    this.forEachElement(nodes, (node) =>
+    {
       node.style.display = '';
     });
   }
