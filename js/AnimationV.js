@@ -7,8 +7,7 @@ class AnimationV
   fadeIn(payload)
   {
     let target = payload.target;
-    let params = payload.params;
-    let opacity = params.opacity;
+    let opacity = payload.params.opacity;
 
     target.style.transition = 'opacity 1s';
     target.style.height = '';
