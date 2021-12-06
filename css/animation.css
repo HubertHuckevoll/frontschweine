@@ -1,0 +1,33 @@
+.fade
+{
+  transition: opacity 1s, width 1s, height 1s;
+}
+
+.fadeIn
+{
+  opacity: 1;
+  width: auto;
+  height: auto;
+}
+
+.fadeOut
+{
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slide
+{
+  transition: height 3s;
+}
+
+.slideDown
+{
+  height: 45px;
+}
+
+.slideUp
+{
+  height: 0px;
+}

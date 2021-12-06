@@ -18,13 +18,6 @@ class BaseM
     xhttp.open("GET", urlStr, true);
     xhttp.send();
   }
-
-  cloneObj(o)
-  {
-    var copy = Object.assign({}, o);
-    return copy;
-  }
-
 }
 
 Object.assign(BaseM.prototype, Events);
