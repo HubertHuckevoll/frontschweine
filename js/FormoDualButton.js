@@ -1,6 +1,6 @@
 "use strict";
 
-class FormoDualButton extends HTMLElement
+class FormoDualButton extends FormoBase
 {
   constructor()
   {

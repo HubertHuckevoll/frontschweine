@@ -1,6 +1,6 @@
 "use strict";
 
-class FormoTabbox extends HTMLElement
+class FormoTabbox extends FormoBase
 {
 
   constructor()

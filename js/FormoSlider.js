@@ -1,6 +1,6 @@
 "use strict";
 
-class FormoSlider extends HTMLElement
+class FormoSlider extends FormoBase
 {
   constructor()
   {
