@@ -54,7 +54,7 @@ class FormoTabbox extends FormoBase
 
   setActiveTab()
   {
-    let tabbox = document.getElementById(this.tabbox);
+    let tabbox = document.querySelector('.'+this.tabbox);
     let nodes = null;
     let oldTab = null;
     let newTab = null;
@@ -80,7 +80,7 @@ class FormoTabbox extends FormoBase
     // Tabstripe: set new active tab; Tabbox: set tab card
     newTab = this.querySelector('[tab="'+this.active+'"]');
     newTab.classList.add('formoTabStripeActive');
-    document.getElementById(this.active).style.display = 'block';
+    document.querySelector('.'+this.active).style.display = 'block';
 
     this.emit('formoTabChange', {'oldTab': oldTab, 'newTab': newTab});
   }
