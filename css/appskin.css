@@ -69,8 +69,7 @@ input[type="text"]:active:focus
 input[type="range"]
 {
   vertical-align: middle;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  appearance: none;
   background-color: #eee;
   height: 3px;
 }
@@ -99,4 +98,17 @@ input[type=number]
   margin-left: 3px;
   margin-right: 3px;
   width: 4rem;
+}
+
+formo-slider
+{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+fieldset
+{
+  border: 1px solid #eee;
+  padding: 8px;
 }

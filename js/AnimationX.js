@@ -1,10 +1,6 @@
-/**
- * Animation Mixin
- * a class for all your dynamic CSS needs.
- */
+export let AnimationX;
 
-let AnimationX =
-{
+AnimationX = {
 
   hide: function(elem, css)
   {

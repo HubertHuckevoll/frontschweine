@@ -1,6 +1,7 @@
-"use strict";
+import { Events } from '/frontschweine/js/Events.js';
+import { AnimationX } from '/frontschweine/js/AnimationX.js';
 
-class FormoBase extends HTMLElement
+export class FormoBase extends HTMLElement
 {
   constructor()
   {

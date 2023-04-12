@@ -1,6 +1,6 @@
-"use strict";
+import { Events } from '/frontschweine/js/Events.js';
 
-class FormoDualButton extends FormoBase
+export class FormoDualButton extends FormoBase
 {
   constructor()
   {

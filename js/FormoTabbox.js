@@ -1,6 +1,7 @@
-"use strict";
+import { Events } from '/frontschweine/js/Events.js';
+import { FormoBase } from '/frontschweine/js/FormoBase.js';
 
-class FormoTabbox extends FormoBase
+export class FormoTabbox extends FormoBase
 {
 
   constructor()

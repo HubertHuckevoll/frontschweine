@@ -1,6 +1,6 @@
-"use strict";
+import { Events } from '/frontschweine/js/Events.js';
 
-class BaseM
+export class BaseM
 {
   constructor()
   {

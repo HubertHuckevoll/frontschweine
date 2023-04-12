@@ -1,12 +1,7 @@
-"use strict";
+export let Events;
 
-/**
- * Mixin
- * contains our event handling magic, lel
- */
+Events = {
 
-let Events =
-{
   on(eventTypeStr, ...restArgs)
   {
     let queryStr = '';
