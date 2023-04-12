@@ -3,8 +3,9 @@ import { AnimationX } from '/frontschweine/js/AnimationX.js';
 
 export class BaseV
 {
-  constructor()
+  constructor(anim)
   {
+    this.anim = anim;
   }
 }
 
