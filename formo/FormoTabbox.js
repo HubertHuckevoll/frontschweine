@@ -1,5 +1,4 @@
-import { Events } from '/frontschweine/js/Events.js';
-import { FormoBase } from '/frontschweine/js/FormoBase.js';
+import { FormoBase } from '/frontschweine/formo/FormoBase.js';
 
 export class FormoTabbox extends FormoBase
 {
@@ -87,5 +86,3 @@ export class FormoTabbox extends FormoBase
   }
 
 }
-
-Object.assign(FormoTabbox.prototype, Events);

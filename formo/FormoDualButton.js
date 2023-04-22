@@ -1,4 +1,4 @@
-import { Events } from '/frontschweine/js/Events.js';
+import { FormoBase } from '/frontschweine/formo/FormoBase.js';
 
 export class FormoDualButton extends FormoBase
 {
@@ -76,6 +76,3 @@ export class FormoDualButton extends FormoBase
   }
 
 }
-
-Object.assign(FormoDualButton.prototype, Events);
-

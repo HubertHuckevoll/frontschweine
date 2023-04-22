@@ -1,24 +1,7 @@
-import { Events } from '/frontschweine/js/Events.js';
-
 export class BaseM
 {
-  constructor()
+  constructor(evtEmt)
   {
-  }
-
-  request(urlStr, succFunc)
-  {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = () =>
-    {
-      if (xhttp.readyState == 4 && xhttp.status == 200) {
-        succFunc(JSON.parse(xhttp.responseText));
-      }
-    };
-    xhttp.open("GET", urlStr, true);
-    xhttp.send();
+    this.evtEmt = evtEmt;
   }
 }
-
-Object.assign(BaseM.prototype, Events);
-

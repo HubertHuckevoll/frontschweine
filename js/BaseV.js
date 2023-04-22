@@ -1,11 +1,8 @@
-import { Events } from '/frontschweine/js/Events.js';
-
 export class BaseV
 {
-  constructor(anim)
+  constructor(evtEmt, anim)
   {
+    this.evtEmt = evtEmt;
     this.anim = anim;
   }
 }
-
-Object.assign(BaseV.prototype, Events);

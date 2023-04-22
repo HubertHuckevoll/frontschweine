@@ -1,5 +1,4 @@
-import { Events } from '/frontschweine/js/Events.js';
-import { FormoBase } from '/frontschweine/js/FormoBase.js';
+import { FormoBase } from '/frontschweine/formo/FormoBase.js';
 
 export class FormoSlider extends FormoBase
 {
@@ -157,5 +156,3 @@ export class FormoSlider extends FormoBase
   }
 
 }
-
-Object.assign(FormoSlider.prototype, Events);
