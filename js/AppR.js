@@ -15,7 +15,6 @@ export class AppR
     let queryStr = '';
     let callback = null;
 
-
     switch (restArgs.length)
     {
       case 1:
