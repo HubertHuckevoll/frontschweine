@@ -17,7 +17,7 @@ export class FormoSlider extends FormoBase
 
   connectedCallback()
   {
-    this.querySelector('.formoSliderRange').addEventListener('change', this.valueChanged.bind(this));
+    this.querySelector('.formoSliderRange').addEventListener('input', this.valueChanged.bind(this));
     this.querySelector('.formoSliderMirror').addEventListener('change', this.valueChanged.bind(this));
 
     this.querySelector('.formoSliderDec').addEventListener('click', this.decButtonPressed.bind(this));
